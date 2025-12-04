@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emin TUNCER - Projelerim</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/lang.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo">Emin TUNCER</div>
+    <nav>
+        <ul>
+            <li><a href="index.html" data-key="home">Ana Sayfa</a></li>
+            <li><a href="hakkimda.html" data-key="about">Hakkımda</a></li>
+            <li><a href="projeler.html" data-key="projects">Projelerim</a></li>
+            <li><a href="galeri.html" data-key="gallery">Galeri</a></li>
+            <li><a href="iletisim.html" data-key="contact">İletişim</a></li>
+        </ul>
+    </nav>
+    <div class="lang-selector">
+        <button onclick="setLanguage('tr')">TR</button>
+        <button onclick="setLanguage('en')">EN</button>
+    </div>
+</header>
+
+<main>
+    <h1 class="projects-title" data-key="projects">Projelerim</h1>
+
+    <section class="project-container">
+
+        <div class="project-card">
+            <h2 class="project-header" data-key="project1-title">Kara Kalem</h2>
+            <img src="images/proje1.jpg" alt="Proje 1">
+            <p class="project-desc" data-key="project1-desc">İnternetten bulduğumuz fotoğrafı photoshop yardımıyla boyuyoruz</p>
+        </div>
+
+        <div class="project-card">
+            <h2 class="project-header" data-key="project2-title">Image Stack</h2>
+            <img src="images/proje2.jpg" alt="Proje 2">
+            <p class="project-desc" data-key="project2-desc">Bu projede çekmiş olduğumuz fotoğrafları yükleyip insanları siliyoruz.</p>
+        </div>
+
+        <div class="project-card">
+            <h2 class="project-header" data-key="project3-title">Ürün Tanıtımı</h2>
+            <img src="images/proje3.jpg" alt="Proje 3">
+            <p class="project-desc" data-key="project3-desc">Bu projemizde seçmiş olduğumuz bir ürünün satış pankartı gibi.</p>
+        </div>
+
+    </section>
+</main>
+</body>
+</html>

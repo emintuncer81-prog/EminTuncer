@@ -1,0 +1,246 @@
+/* Genel ayarlar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d; /* Siyah arka plan */
+    color: #fff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f0a500;
+}
+
+.lang-selector button {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.lang-selector button:hover {
+    background-color: #f0a500;
+    color: #000;
+}
+
+/* Main içerik */
+main {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Ana sayfa vesikalık fotoğraf */
+.profile-photo {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-photo img {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 3px solid #f0a500;
+    box-shadow: 0 0 20px rgba(240, 165, 0, 0.5);
+}
+
+/* Hoşgeldiniz yazısı */
+.welcome h1 {
+    font-size: 36px;
+}
+
+/* Projeler */
+.projects-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 32px;
+    color: #f0a500;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #111;
+    border: 2px solid #f0a500;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(240, 165, 0, 0.5);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.project-header {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.project-desc {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Galeri slider */
+.gallery-slider {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    border: 2px solid #f0a500;
+    border-radius: 10px;
+}
+
+.gallery-slider .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.gallery-slider img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.gallery-slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.gallery-slider .prev { left: 10px; }
+.gallery-slider .next { right: 10px; }
+
+.gallery-slider button:hover {
+    background-color: #f0a500;
+    color: #000;
+}
+/* İletişim alanı */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #f0a500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #fff;
+    color: #000;
+}
+/* Hakkımda Eğitim Tablosu */
+.education {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.education h2 {
+    font-size: 28px;
+    color: #f0a500;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    overflow-x: auto; /* mobilde yatay kaydırma */
+    padding: 0 10px;
+}
+
+.education-table {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #111;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 0 15px rgba(240,165,0,0.3);
+}
+
+.education-table th,
+.education-table td {
+    padding: 12px 15px;
+    border: 1px solid #f0a500;
+    text-align: left;
+}
+
+.education-table th {
+    background-color: #222;
+    font-size: 18px;
+}
+
+.education-table tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+.education-table tr:hover {
+    background-color: #333;
+    transition: 0.3s;
+}

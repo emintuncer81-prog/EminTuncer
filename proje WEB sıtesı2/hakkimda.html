@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emin TUNCER - Hakkımda</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/lang.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo">Emin TUNCER</div>
+    <nav>
+        <ul>
+            <li><a href="index.html" data-key="home">Ana Sayfa</a></li>
+            <li><a href="hakkimda.html" data-key="about">Hakkımda</a></li>
+            <li><a href="projeler.html" data-key="projects">Projelerim</a></li>
+            <li><a href="galeri.html" data-key="gallery">Galeri</a></li>
+            <li><a href="iletisim.html" data-key="contact">İletişim</a></li>
+        </ul>
+    </nav>
+    <div class="lang-selector">
+        <button onclick="setLanguage('tr')">TR</button>
+        <button onclick="setLanguage('en')">EN</button>
+    </div>
+</header>
+
+<main>
+    <!-- Önceki Hakkımda Metni -->
+    <section class="about-text">
+        <p data-key="about-text">
+            Ben Emin Tuncer, 19 yaşındayım, 170 boyundayım, 80 kiloyum. 
+            6 yıl boks ve muaythai geçmişim var. Tasarımdan hoşlanırım, yaratıcı bir insanım, uyumaktan hoşlanırım. 
+            Açık hava reklamcılığında kalfayla usta arası bir yerdeyim. Bunun dışında abimle birlikte bir süpermarket işletiyorum.
+        </p>
+    </section>
+
+    <!-- Modern Eğitim Tablosu -->
+    <section class="education">
+        <h2 data-key="education-title">Eğitim Bilgileri</h2>
+        <div class="table-container">
+            <table class="education-table">
+                <thead>
+                    <tr>
+                        <th data-key="level">Düzey</th>
+                        <th data-key="school">Okul</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-key="primary-level">İlkokul</td>
+                        <td data-key="primary-school">Başarı İlkokulu</td>
+                    </tr>
+                    <tr>
+                        <td data-key="middle-level">Ortaokul</td>
+                        <td data-key="middle-school">Bil Ortaokulu</td>
+                    </tr>
+                    <tr>
+                        <td data-key="high1-level">Lise 9. ve 10. Sınıf</td>
+                        <td data-key="high1-school">Ladik Akpınar Fen Lisesi</td>
+                    </tr>
+                    <tr>
+                        <td data-key="high2-level">Lise 11. ve 12. Sınıf</td>
+                        <td data-key="high2-school">Zorlu Koleji</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+</body>
+</html>
